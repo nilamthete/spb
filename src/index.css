@@ -1,0 +1,144 @@
+/* ==========================================================================
+   Director Profile Website - Global Design Tokens & Base Styles
+   Mrs. Sujata Prashant Bachhav, Director – Aarya Innovtech Pvt. Ltd.
+   Theme: Maroon (#7F1D2D) • Gold (#D4A044) • Light Cream (#FFF9F0) • Dark Charcoal (#292524)
+   ========================================================================== */
+
+:root {
+  /* Global Color Tokens */
+  --primary-maroon: #7F1D2D;
+  --primary-maroon-dark: #661724;
+  --primary-maroon-light: #992337;
+  --primary-maroon-subtle: rgba(127, 29, 45, 0.08);
+
+  --secondary-gold: #D4A044;
+  --secondary-gold-dark: #B8852B;
+  --secondary-gold-light: #E8C178;
+  --secondary-gold-subtle: rgba(212, 160, 68, 0.14);
+
+  --bg-cream: #FFF9F0;
+  --bg-cream-card: #FFFFFF;
+  --bg-cream-subtle: #FAF3E7;
+
+  --text-charcoal: #292524;
+  --text-muted: #57534E;
+  --text-light: #78716C;
+
+  /* Aliases & Design System Standards */
+  --ink: #292524;
+  --muted: #57534E;
+  --line: rgba(212, 160, 68, 0.25);
+  --line-strong: rgba(127, 29, 45, 0.25);
+  --paper: #FFF9F0;
+  --paper-card: #FFFFFF;
+  --cream: #FFF9F0;
+  --white: #FFFFFF;
+
+  --maroon: #7F1D2D;
+  --gold: #D4A044;
+  --gold-light: rgba(212, 160, 68, 0.16);
+
+  /* Legacy aliases remapped cleanly to global theme */
+  --green: #7F1D2D;
+  --green-dark: #661724;
+  --green-deep: #4A101A;
+  --green-forest: #661724;
+  --green-light: #FAF3E7;
+  --green-subtle: rgba(127, 29, 45, 0.08);
+  --lime: #D4A044;
+  --blue: #7F1D2D;
+
+  /* Premium Elevated Shadows */
+  --shadow: 0 20px 60px rgba(127, 29, 45, 0.09);
+  --shadow-sm: 0 4px 16px rgba(127, 29, 45, 0.05);
+  --shadow-card: 0 12px 36px rgba(127, 29, 45, 0.06);
+  --shadow-card-hover: 0 20px 48px rgba(127, 29, 45, 0.13);
+
+  /* Typography - Roboto globally applied */
+  --font-display: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-body: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-sans: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  /* Transitions */
+  --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-soft: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --duration-hover: 0.3s;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
+body {
+  color: var(--text-charcoal);
+  background-color: var(--bg-cream);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+  position: relative;
+}
+
+/* Headings use Roboto and global Maroon */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  color: var(--primary-maroon);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Global elements inherit Roboto font */
+button, input, textarea, select, p, span, a, li, label {
+  font-family: var(--font-body);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--duration-hover) ease;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Custom Executive Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF9F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4A044;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7F1D2D;
+}
